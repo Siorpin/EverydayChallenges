@@ -20,6 +20,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Color
+import com.example.everydaychallenges.evrdchall.presentation.loginScreen.components.LoginButton
 
 @Composable
 fun LoginScreen(modifier: Modifier = Modifier) {
@@ -55,7 +57,12 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text("siemanko")
+            Text("Log in to make your life a game!")
+            LoginButton(
+                name = "Google",
+                backgroundColor = Color.Red,
+                onClick = { /*TODO*/ }
+            )
         }
     }
 }
